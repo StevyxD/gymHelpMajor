@@ -1,19 +1,19 @@
 export const exerciseOptions = {
-  method: "GET",
-  hostname: "exercisedb.p.rapidapi.com",
+  method: 'GET',
+  hostname: process.env.REACT_APP_RAPID_API_HOST,
   port: null,
-  path: "/exercises/bodyPartList",
+  path: '/exercises/bodyPartList',
   headers: {
-    "x-rapidapi-key": "8afb5e6f54msh16d82964069322fp1f0970jsn213c413c449c",
-    "x-rapidapi-host": "exercisedb.p.rapidapi.com",
+    'x-rapidapi-key': process.env.REACT_APP_RAPID_API_KEY,
+    'x-rapidapi-host': process.env.REACT_APP_RAPID_API_HOST,
   },
 };
 
 export const youtubeOptions = {
-  method: "GET",
+  method: 'GET',
   headers: {
-    "X-RapidAPI-Host": "youtube-search-and-download.p.rapidapi.com",
-    "X-RapidAPI-Key": "f0021db587msh781fb1cbef39856p11c183jsn45521d5d1c85",
+    'X-RapidAPI-Host': process.env.REACT_APP_YOUTUBE_API_HOST,
+    'X-RapidAPI-Key': process.env.REACT_APP_YOUTUBE_API_KEY,
   },
 };
 
